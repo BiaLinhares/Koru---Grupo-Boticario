@@ -1,0 +1,156 @@
+/* === ESTILOS CORPO === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* === CABEÇALHO === */
+.cabecalho {
+    text-align: center;
+    background-color: #e07a5f;
+    color: black;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.cabecalho .subtitulo {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+h1 { /* Título "Cardápio" */
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* === CARDÁPIO COM TABELAS DE SABORES === */
+.cardapio-tabelas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que as tabelas quebrem linha em telas menores */
+    gap: 40px; /* Espaço entre as seções de sabores */
+    margin-bottom: 50px;
+}
+
+.categoria-sabores-tabela {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 280px; /* Garante que o box não fique muito pequeno */
+    flex: 1; /* Permite que os itens cresçam e ocupem o espaço disponível */
+    max-width: 45%; /* Limita a largura para que não ocupem 100% em telas grandes */
+    text-align: center; /* Centraliza o título da categoria */
+}
+
+.categoria-sabores-tabela h2 {
+    color: #e07a5f;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.categoria-sabores-tabela table {
+    width: 100%; /* Faz a tabela ocupar 100% da largura do seu container */
+    border-collapse: collapse; /* Remove espaçamento entre as bordas das células */
+    margin-top: 15px;
+}
+
+.categoria-sabores-tabela th,
+.categoria-sabores-tabela td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Borda para as células */
+    text-align: left; /* Alinha o texto das células à esquerda */
+    color: #555;
+    font-size: 1.1em;
+}
+
+.categoria-sabores-tabela th {
+    background-color: #f8f8f8; /* Fundo leve para o cabeçalho da tabela */
+    color: #e07a5f;
+    font-weight: bold;
+    text-align: center; /* Centraliza o cabeçalho "Sabor" */
+}
+
+/* === FORMULÁRIO DE PEDIDO === */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form h3, form h4, form h5, form p {
+    color: #e07a5f;
+    margin-bottom: 15px;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select,
+form textarea {
+    width: calc(100% - 110px); /* Ajusta a largura considerando a label */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+form select {
+    width: 100%; /* Ajusta para 100% da largura do container, ou ajuste como os inputs */
+    padding: 10px;
+}
+
+form textarea {
+    width: 100%;
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+    min-height: 80px;
+}
+
+form input[type="submit"] {
+    background-color: #e07a5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    display: block; /* Ocupa a largura total para centralizar */
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #c7674e;
+}
+
+/* Adicionando alguns estilos para o layout do formulário */
+form p {
+    font-size: 14px;
+    color: #777;
+    margin-top: -10px;
+}
