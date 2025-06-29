@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Pizza</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Pizzaria Extremo Sabor</h1>
+    <p class="subtitulo"> Só aqui voce encontra as melhores pizzas e a entrega mais rápida para matar sua fome</p>
+  </header>
+  <h1>Cardápio</h1>
+
+<div class="cardapio-tabelas">
+    <div class="categoria-sabores-tabela">
+        <h2>Pizzas Tradicionais</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sabor</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr><td>Quatro Queijos - mussarela, gorgonzola, parmesão e provolone</td></tr>
+                <tr><td>Calabresa</td></tr>
+                <tr><td>Frango Crocante</td></tr>
+                <tr><td>Frango com Catupiry</td></tr>
+                <tr><td>Bacon Crocante</td></tr>
+                <tr><td>Frango com Cheddar</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="categoria-sabores-tabela">
+        <h2>Pizzas Especiais</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sabor</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr><td>Atum</td></tr>
+                <tr><td>Da Casa</td></tr>
+                <tr><td>Strogonoff</td></tr>
+                <tr><td>Parmegiana</td></tr>
+                <tr><td>Portuguesa</td></tr>
+                <tr><td>Peito de Peru com Brócolis</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <form method="post" action="#">
+      <h3>Faça seu pedido aqui</h3>
+    <p>Insira seus dados</p>
+    <label for="Nome">Nome:</label><input type="text" name="Nome"><br>
+    <label for="Email">Email:</label><input type="text" name="Email"><br>
+    <label for="Telefone">Telefone:</label><input type="text" name="Telefone"><br>
+    <h4>Tamanho</h4>
+    <input type="radio" name="tamanho" value="P">Pequena
+    <input type="radio" name="tamanho" value="M">Média
+    <input type="radio" name="tamanho" value="G">Grande
+    <h4>Sabor</h4><select name="sabor">
+        <option>Quatro Queijos</option>
+        <option>Calabresa</option>
+        <option>Frango Crocante</option>
+        <option>Frango com Catupiry</option>
+        <option>Bacon Crocante</option>
+        <option>Frango com Cheddar</option>
+        <option>Atum</option>
+        <option>Da Casa</option>
+        <option>Strogonoff</option>
+        <option>Parmegiana</option>
+        <option>Portuguesa</option>
+        <option>Peito de Peru com Brócolis</option>
+    </select>
+    <h5>Adicionais</h5>
+    <p>Bordas</p>
+    <input type="checkbox" name="borda recheada" value="sim"> Catupiry
+    <input type="checkbox" name="borda recheada" value="sim"> Cheddar
+    <input type="checkbox" name="borda recheada" value="sim"> Queijo
+    <input type="checkbox" name="borda recheada" value="sim"> Chocolate
+    <input type="checkbox" name="borda recheada" value="sim"> Nenhuma
+    <p>Extras</p>
+    <input type="checkbox" name="recheio extra" value="sim"> Catupiry
+    <input type="checkbox" name="borda recheada" value="sim"> Queijo
+    <input type="checkbox" name="recheio extra" value="sim"> Calabresa
+    <input type="checkbox" name="recheio extra" value="sim"> Bacon<br>
+    <br>
+    Data da Entrega:<input type="date" name="Dataentrega"><br>
+    <br>
+    Comentário:<textarea name="mensagem" rows="10" cols="30"></textarea>
+    <input type="submit">
+  </form>
+    
+</body>
+</html>
